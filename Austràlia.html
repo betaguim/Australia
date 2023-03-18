@@ -1,0 +1,121 @@
+<html>
+
+<head>
+
+<style type="text/css">
+   html { scroll-behavior: smooth; }
+   h3     { font-family: Broadway;  font-size: 18pt; color: yellow;}
+   body   { background-color: #777799;}
+   
+   p      {font-family: Calibri;  font-size: 12pt; color: white; }
+   p.a    {font-family: Magneto;  font-size: 12pt; color: white; }
+   
+   #d01   {position:absolute; left: 110px; right: 360px; top: 90px;
+            height: 400px;
+            width: 500px;
+			overflow-y: auto;
+            font-family: Calibri;  font-size: 13pt; color: white;}
+		   
+   #d02   {position:absolute; left: 310px; right: 360px; top: 590px;
+            height: 190px;
+            width:  600px;
+            overflow-y: auto;
+            font-family: Calibri;  font-size: 13pt; color: yellow;}
+	 
+   img    { float: right;
+		    position:absolute; left: 650px; right: 50px; top: 90px;}
+		   
+</style>
+
+<script>
+
+function escriu(id) {
+  if (id=="d01") id = 50
+
+  var codi = Number(id);
+  estac.src = F[codi];           
+  document.getElementById('d02').innerHTML = C[codi];
+}
+
+</script>
+</head>
+
+<body>
+
+<script src="BDAustralia.js">;</script>
+
+<h3> fotos Austràlia <h3>
+<img id="estac" src="50.jpg"  height="370" >
+
+
+  
+<div id="d01">  
+
+<script>
+  document.getElementById("d01").addEventListener("click", (e)=> {
+  var x = e.target.id;
+  escriu(x); 
+}, false);
+
+</script>
+
+<p id="00" > 0 Acacia aneura</p>
+<p id="01" > 1 Acacia brachystachya</p>
+<p id="02" > 2 Acacia cultriformis</p>
+<p id="03" > 3 Acacia howittii</p>
+<p id="04" > 4 Acacia longifolia</p> 
+<p id="05" > 5 Acacia truncata</p>
+<p id="06" > 6 Alyxia ruscifolia </p>
+<p id="07" > 7 Anigozanthus flavidus  </p>
+<p id="08" > 8 Banksia integrifolia  </p>
+<p id="09" > 9 Banksia praemorsa </p>
+<p id="10" > 10 Callistemon citrinus </p>  
+<p id="11" > 11 Callistemon pallidus</p> 
+<p id="12" > 12 Callistemon violaceus </p> 
+<p id="13" > 13 Casuarina cristata </p> 
+<p id="14" > 14 Corymbia ficifolia</p> 
+<p id="15" > 15 Corymbia torelliana</p> 
+<p id="16" > 16 Dichelostemma ida-maia</p> 
+<p id="17" > 17 Eremophila divaricata</p>
+<p id="18" > 18 Eremophila maculata</p> 
+<p id="19" > 19 Eucalyptus caesia</p> 
+<p id="20">20 Eucalyptus calycogona</p>
+<p id="21">21 Eucalyptus cosmophylla</p>
+<p id="22">22 Eucalyptus eritrocoris</p>
+<p id="23">23 Eucalyptus kruseana</p>
+<p id="24">24 Eucalyptus torquata</p>
+<p id="25">25 Ficus australis</p>
+<p id="26">26 Grevillea crithmifolia</p>
+<p id="27">27 Grevillea cv. Golden</p>
+<p id="28">28 Grevillea johnsonii</p>
+<p id="29">29 Grevillea olivacea</p>
+<p id="30">30 Grevillea robusta</p>
+<p id="31">31 Hakea bucculenta</p>
+<p id="32">32 Hakea cristata</p>
+<p id="33">33 Hakea laurina</p>
+<p id="34">34 Hakea orthorrhyncha</p>
+<p id="35">35 Hakea recurva</p>
+<p id="36">36 Lagunaria patersonii</p>
+<p id="37">37 Melaleuca nesophilla</p>
+<p id="38">38 Melaleuca styphelioides</p>
+<p id="39">39 Myoporum</p>
+<p id="40">40 Pimelea ferrruginea</p>
+<p id="41">41 Senna artemisoides</p>
+<p id="42">42 Stenocarpus sinuatus</p>
+<p id="43">43 Thrytomene saxicola</p>
+<p id="44">44 Westringia fruticosa</p>
+<p id="45">45 Xanthorrhoea glauca</p>
+
+</div>
+
+
+
+ <div id="d02">
+ <p></p>  
+ </div>
+
+ 
+</body>
+
+
+</html>
